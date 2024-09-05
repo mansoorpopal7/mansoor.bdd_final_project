@@ -23,8 +23,8 @@ public class CreateAccountSeps extends SeleniumUtility {
         String randomEmail = RandomGenerator.randomEmail(prefix);
         sendText(CreateAccountPageObject.EMAIL_INPUT, randomEmail);
         selectFromDropDown(CreateAccountPageObject.PREFIX_SELECT, "Mr.");
-        sendText(CreateAccountPageObject.FIRST_NAME_INPUT, "Omerali");
-        sendText(CreateAccountPageObject.LAST_NAME_INPUT, "khan");
+        sendText(CreateAccountPageObject.FIRST_NAME_INPUT, "mansoor");
+        sendText(CreateAccountPageObject.LAST_NAME_INPUT, "popal");
         selectFromDropDown(CreateAccountPageObject.GENDER_SELECT, "Male");
         selectFromDropDown(CreateAccountPageObject.MARITAL_STATUS_SELECT, "Single");
         sendText(CreateAccountPageObject.EMPLOYMENT_STATUS, "Test Engineer");
@@ -56,9 +56,9 @@ public class CreateAccountSeps extends SeleniumUtility {
     }
     @When("when the user fill up sign up form")
     public void whenTheUserFillUpSignUpForm() {
-        sendText(CreateAccountPageObject.USERNAME_INPUT, "Omerali");
-        sendText(CreateAccountPageObject.PASSWORD_INPUT, "Omer32@");
-        sendText(CreateAccountPageObject.CONFIRM_PASSWORD_INPUT, "Omer32@");
+        sendText(CreateAccountPageObject.USERNAME_INPUT, "mansoorpopal");
+        sendText(CreateAccountPageObject.PASSWORD_INPUT, "Kbl00135!");
+        sendText(CreateAccountPageObject.CONFIRM_PASSWORD_INPUT, "Kbl00135!");
     }
     @Then("click on submit button")
     public void clickOnSubmitButton() {
@@ -70,12 +70,12 @@ public class CreateAccountSeps extends SeleniumUtility {
 
         sendText(CreateAccountPageObject.EMAIL_INPUT, "omerkhan21@gmail.com");
         selectFromDropDown(CreateAccountPageObject.PREFIX_SELECT, "Mr.");
-        sendText(CreateAccountPageObject.FIRST_NAME_INPUT, "Omerali");
-        sendText(CreateAccountPageObject.LAST_NAME_INPUT, "khan");
+        sendText(CreateAccountPageObject.FIRST_NAME_INPUT, "mansoor");
+        sendText(CreateAccountPageObject.LAST_NAME_INPUT, "popal");
         selectFromDropDown(CreateAccountPageObject.GENDER_SELECT, "Male");
         selectFromDropDown(CreateAccountPageObject.MARITAL_STATUS_SELECT, "Single");
         sendText(CreateAccountPageObject.EMPLOYMENT_STATUS, "Test Engineer");
-        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "01/21/2001");
+        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "01/21/1998");
     }
     @When("validate account error message")
     public void validateAccountErrorMessage() {
